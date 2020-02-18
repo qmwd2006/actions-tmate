@@ -1,7 +1,13 @@
 name: Ubuntu
+# on:
+#  watch:
+#    types: [started]
+
 on:
-  watch:
-    types: [started]
+  push:
+    branches: 
+      - master
+
 jobs:
   Ubuntu:
     runs-on: ubuntu-latest
